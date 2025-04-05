@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recycling - E-Waste Solution</title>
+    <link rel="stylesheet" href="ai.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AI-Powered E-Waste Recycling</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="ai.html">AI Recycling</a></li>
+                <li><a href="Donation.html">Donation</a></li>
+                <li><a href="learning.html">Learning</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>AI-Powered E-Waste Sorting & Recycling</h2>
+        <p>Detect e-waste components, classify materials, and find sustainable recycling options.</p>
+    </section>
+
+    <!-- AI Recycling Options -->
+    <section id="recycling-options">
+        <div class="option-card">
+            <h3>Detect E-Waste Components</h3>
+            <p>Upload an image to identify components in your electronic waste.</p>
+            <button class="btn btn-primary" id="detect-ewaste">Upload & Detect</button>
+        </div>
+
+        <div class="option-card">
+            <h3>Suggest Recycling Options</h3>
+            <p>Find the best recycling or disposal method for your e-waste.</p>
+            <button class="btn btn-secondary" id="suggest-recycling">Get Suggestions</button>
+        </div>
+
+        <div class="option-card">
+            <h3>Classify E-Waste Materials</h3>
+            <p>Manually classify your e-waste based on material type.</p>
+            <button class="btn btn-primary" id="classify-ewaste">Classify Now</button>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section class="upload-container">
+        <h2>Upload Your E-Waste Image</h2>
+        <div class="upload-box" id="upload-box">
+            <p>Click to upload an image or drag & drop here</p>
+            <input type="file" id="upload-input" accept="image/*" hidden>
+        </div>
+    </section>
+
+    <!-- Classification Section -->
+    <section id="classification-section">
+        <h2>Select Material Type</h2>
+        <select id="material-type">
+            <option value="plastic">Plastic</option>
+            <option value="metal">Metal</option>
+            <option value="circuitboard">Circuit Board</option>
+        </select>
+        <button class="btn btn-secondary" id="classify-material">Classify</button>
+    </section>
+
+    <script src="ai.js"></script>
+</body>
+</html>

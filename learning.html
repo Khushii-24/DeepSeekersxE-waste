@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning - E-Waste Solutions</title>
+    <link rel="stylesheet" href="Learning.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Everything you need to know about E-waste</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="ai.html">AI Recycling</a></li>
+                <li><a href="Donation.html">Donation</a></li>
+                <li><a href="learning.html">Learning</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="button-section">
+        <button class="tab-btn" onclick="showContent('green-electronics')">Promote Green Electronics</button>
+        <button class="tab-btn" onclick="showContent('govt-schemes')">Govt Schemes and Funding</button>
+        <button class="tab-btn" onclick="showContent('uses-ewaste')">Uses of Electronic Waste</button>
+    </section>
+
+    <!-- Green Electronics Section -->
+    <section id="green-electronics" class="content-section">
+        <h2>Green Electronics: Sustainable Choices</h2>
+        <div class="content-item">
+            <p>Explain the concept of green electronics: products designed and manufactured with minimal environmental impact.</p>
+            <p>Highlight the benefits of choosing green electronics: reduced energy consumption, lower carbon footprint, less hazardous waste, and responsible resource use.</p>
+            <p>Emphasize the importance of making informed purchasing decisions.</p>
+        </div>
+
+        <div class="content-item">
+            <h3>Key Features of Green Electronics</h3>
+            <div class="content-header">
+                <h4>Energy Efficiency</h4>
+                <button class="read-more-btn" onclick="toggleDescription('energy-efficiency')">Read More</button>
+            </div>
+            <div id="energy-efficiency" class="content-description">
+                <p>Explain energy-saving technologies like Energy Star certification.</p>
+                <p>Discuss the importance of low-power consumption devices.</p>
+                <p>Provide tips for optimizing energy usage.</p>
+            </div>
+
+            <div class="content-header">
+                <h4>Reduced Hazardous Materials</h4>
+                <button class="read-more-btn" onclick="toggleDescription('hazardous-materials')">Read More</button>
+            </div>
+            <div id="hazardous-materials" class="content-description">
+                <p>Explain the dangers of hazardous materials in electronics (e.g., lead, mercury, cadmium).</p>
+                <p>Highlight certifications like RoHS (Restriction of Hazardous Substances).</p>
+                <p>Promote products made with safer alternatives.</p>
+            </div>
+
+            <div class="content-header">
+                <h4>Sustainable Materials and Manufacturing</h4>
+                <button class="read-more-btn" onclick="toggleDescription('sustainable-materials')">Read More</button>
+            </div>
+            <div id="sustainable-materials" class="content-description">
+                <p>Discuss the use of recycled and renewable materials.</p>
+                <p>Highlight companies that prioritize sustainable manufacturing processes.</p>
+                <p>Explain the concept of a circular economy and product life cycle.</p>
+            </div>
+
+            <div class="content-header">
+                <h4>EPEAT (Electronic Product Environmental Assessment Tool)</h4>
+                <button class="read-more-btn" onclick="toggleDescription('epeat')">Read More</button>
+            </div>
+            <div id="epeat" class="content-description">
+                <p>Explain what EPEAT is, and how it helps consumers to identify green electronics.</p>
+                <p>Explain the different tiers of EPEAT certification.</p>
+            </div>
+
+            <div class="content-header">
+                <h4>Product Longevity and Repairability</h4>
+                <button class="read-more-btn" onclick="toggleDescription('product-longevity')">Read More</button>
+            </div>
+            <div id="product-longevity" class="content-description">
+                <p>Promote devices designed for durability and easy repair.</p>
+                <p>Encourage users to extend the lifespan of their electronics.</p>
+                <p>Highlight the "right to repair" movement.</p>
+            </div>
+        </div>
+
+        <div class="content-item">
+            <h3>Tips for Choosing Green Electronics</h3>
+            <p><strong>Look for Certifications:</strong> Energy Star, EPEAT, RoHS</p>
+            <p><strong>Consider Energy Consumption:</strong> Check power ratings and energy efficiency labels.</p>
+            <p><strong>Evaluate Materials:</strong> Choose products made with recycled or renewable materials.</p>
+            <p><strong>Prioritize Durability:</strong> Invest in well-built devices with longer lifespans.</p>
+            <p><strong>Support Companies with Sustainable Practices:</strong> Research company environmental policies and initiatives.</p>
+            <p><strong>Think about Repairability:</strong> Can the product be repaired? Are spare parts easily available?</p>
+        </div>
+
+        <div class="content-item">
+            <h3>Resources and Information</h3>
+            <p><strong>Links to Reputable Organizations:</strong></p>
+            <ul>
+                <li><a href="https://www.epa.gov/" target="_blank">Environmental Protection Agency (EPA)</a></li>
+                <li><a href="https://www.energystar.gov/" target="_blank">Energy Star Website</a></li>
+                <li><a href="https://www.epeat.net/" target="_blank">EPEAT Website</a></li>
+            </ul>
+            <p>Relevant industry associations, articles, guides on green electronics, product reviews, and comparisons.</p>
+        </div>
+
+        <div class="content-item">
+            <h3>Call to Action</h3>
+            <p>Encourage users to make sustainable choices and promote the use of green electronics.</p>
+            <p>Provide a list of recommended green electronics products.</p>
+            <p><em>"Choosing Energy Star-certified appliances can significantly reduce your energy consumption and lower your electricity bills."</em></p>
+            <p><em>"EPEAT-registered products meet strict environmental criteria throughout their life cycle, from manufacturing to disposal."</em></p>
+            <p><em>"Support companies that prioritize sustainable manufacturing practices and use recycled materials in their products."</em></p>
+        </div>
+    </section>
+
+    <!-- Govt Schemes and Funding Section -->
+    <section id="govt-schemes" class="content-section">
+        <h2>E-Waste Solutions: Policies & Partnerships</h2>
+        <div class="content-item">
+            <div class="content-header">
+                <h4>Contact the Central Pollution Control Board (CPCB)</h4>
+                <button class="read-more-btn" onclick="toggleDescription('cpcb')">Read More</button>
+            </div>
+            <div id="cpcb" class="content-description">
+                <p>The CPCB is responsible for implementing the E-Waste (Management) Rules, 2022 and overseeing Extended Producer Responsibility (EPR).</p>
+                <p><strong>📌 Website:</strong> <a href="https://cpcb.nic.in/" target="_blank">https://cpcb.nic.in/</a></p>
+                <p><strong>📌 EPR Portal:</strong> <a href="https://eprewastecpcb.in/" target="_blank">https://eprewastecpcb.in/</a></p>
+                <p><strong>📌 Helpline Email:</strong> <a href="mailto:ewaste.cpcb@gov.in">ewaste.cpcb@gov.in</a></p>
+                <p><strong>📌 Phone:</strong> +91-11-43102030</p>
+            </div>
+        </div>
+
+        <div class="content-item">
+            <div class="content-header">
+                <h4>Apply for Financial Support for Startups</h4>
+                <button class="read-more-btn" onclick="toggleDescription('financial-support')">Read More</button>
+            </div>
+            <div id="financial-support" class="content-description">
+                <h5>Startup India Scheme</h5>
+                <p>The Startup India Initiative provides financial benefits to waste management and sustainability startups.</p>
+                <p><strong>📌 Benefits:</strong></p>
+                <ul>
+                    <li>Tax exemptions for the first three years</li>
+                    <li>Easy access to government tenders</li>
+                    <li>Fast-track patent applications</li>
+                    <li>Funding through the Startup India Seed Fund Scheme (SISFS)</li>
+                </ul>
+                <p><strong>📌 How to Apply:</strong></p>
+                <ol>
+                    <li>Register your startup on Startup India Portal</li>
+                    <li>Apply for the Seed Fund Scheme for financial support</li>
+                </ol>
+
+                <h5>E-Waste Recycling Fund (MoEFCC Initiative)</h5>
+                <p>The Ministry of Environment, Forest & Climate Change (MoEFCC) has proposed an E-Waste Recycling Fund to support businesses working on e-waste management solutions.</p>
+                <p><strong>📌 Who Can Apply?</strong></p>
+                <ul>
+                    <li>Startups focusing on recycling, refurbishing, or safe disposal of e-waste</li>
+                    <li>Companies implementing Extended Producer Responsibility (EPR) solutions</li>
+                </ul>
+                <p><strong>📌 How to Apply:</strong></p>
+                <ol>
+                    <li>Keep an eye on MoEFCC notifications for funding announcements</li>
+                    <li>Register your startup with CPCB’s E-Waste EPR Portal (<a href="https://eprewastecpcb.in/" target="_blank">https://eprewastecpcb.in/</a>)</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-item">
+            <div class="content-header">
+                <h4>Connect with Producer Responsibility Organizations (PROs)</h4>
+                <button class="read-more-btn" onclick="toggleDescription('pros')">Read More</button>
+            </div>
+            <div id="pros" class="content-description">
+                <p>PROs help companies and individuals comply with e-waste management rules. Some CPCB-authorized PROs include:</p>
+                <ul>
+                    <li><a href="https://www.karosambhav.com/" target="_blank">Karo Sambhav</a></li>
+                    <li><a href="https://www.tessolrecycling.com/" target="_blank">Tessol Recycling</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uses of Electronic Waste Section -->
+    <section id="uses-ewaste" class="content-section">
+        <h2>Use of Electronic Waste</h2>
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Keyboard Key Pen Holder</h4>
+                <button class="read-more-btn" onclick="toggleDescription('keyboard-pen-holder')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/Screenshot 2025-03-27 003900.png" alt="Keyboard Key Pen Holder" class="content-image">
+                <div id="keyboard-pen-holder" class="content-description">
+                    <p><strong>Description:</strong> A creative pen holder made by repurposing old keyboard keys. The keys are glued together to form a sturdy and stylish container.</p>
+                    <p><strong>Components Used:</strong> Old keyboard keys, adhesive glue, small box or plastic cup for support.</p>
+                    <p><strong>Use:</strong> This pen holder helps organize pens, pencils, and markers while giving old keyboards a second life.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Floppy Disk Pen Holder</h4>
+                <button class="read-more-btn" onclick="toggleDescription('floppy-disk-pen-holder')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/pen holder.png" alt="Floppy Disk Pen Holder" class="content-image">
+                <div id="floppy-disk-pen-holder" class="content-description">
+                    <p><strong>Description:</strong> A cube-shaped pen holder made from four old floppy disks, giving a vintage tech look.</p>
+                    <p><strong>Components Used:</strong> Floppy disks, zip ties or hot glue.</p>
+                    <p><strong>Use:</strong> Organizes stationery items while reusing outdated floppy disks in a useful way.</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Circuit Board Pendant Necklace</h4>
+                <button class="read-more-btn" onclick="toggleDescription('circuit-board-necklace')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/nacklace.png" alt="Circuit Board Pendant Necklace" class="content-image">
+                <div id="circuit-board-necklace" class="content-description">
+                    <p><strong>Description:</strong> A stylish pendant made from a small section of a circuit board attached to a metal chain.</p>
+                    <p><strong>Components Used:</strong> Small PCB piece, metal frame, chain, protective resin or clear coating.</p>
+                    <p><strong>Use:</strong> Creates a unique, upcycled fashion accessory from e-waste.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>CD/DVD Lamp</h4>
+                <button class="read-more-btn" onclick="toggleDescription('cd-dvd-lamp')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/dvd lamp.png" alt="CD/DVD Lamp" class="content-image">
+                <div id="cd-dvd-lamp" class="content-description">
+                    <p><strong>Description:</strong> A stunning lamp that uses old CDs to create a light-diffusing effect. The reflective surfaces scatter light beautifully.</p>
+                    <p><strong>Components Used:</strong> Old CDs, a lamp stand, an LED bulb, screws or glue for attachment.</p>
+                    <p><strong>Use:</strong> Reuses CDs creatively to provide a visually appealing lighting solution.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Resistor Bracelet</h4>
+                <button class="read-more-btn" onclick="toggleDescription('resistor-bracelet')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/bracelet.png" alt="Resistor Bracelet" class="content-image">
+                <div id="resistor-bracelet" class="content-description">
+                    <p><strong>Description:</strong> A handmade bracelet crafted using colorful resistors connected with wire and beads.</p>
+                    <p><strong>Components Used:</strong> Resistors, jewelry wire, beads, and clasps.</p>
+                    <p><strong>Use:</strong> Turns small electronic components into an elegant fashion piece.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Hard Drive Clock</h4>
+                <button class="read-more-btn" onclick="toggleDescription('hard-drive-clock')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/hard drive clock.png" alt="Hard Drive Clock" class="content-image">
+                <div id="hard-drive-clock" class="content-description">
+                    <p><strong>Description:</strong> A working clock designed using an old hard disk as the clock face. The clock mechanism is embedded in the center.</p>
+                    <p><strong>Components Used:</strong> Hard drive platter, clock mechanism, small screws.</p>
+                    <p><strong>Use:</strong> Transforms outdated hard drives into functional and stylish timepieces.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>USB Flash Drive Keychain</h4>
+                <button class="read-more-btn" onclick="toggleDescription('usb-keychain')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/flash mob keychain.png" alt="USB Flash Drive Keychain" class="content-image">
+                <div id="usb-keychain" class="content-description">
+                    <p><strong>Description:</strong> A stylish keychain created by repurposing an old USB flash drive case.</p>
+                    <p><strong>Components Used:</strong> Non-working USB flash drive, key ring attachment, small drill for hole.</p>
+                    <p><strong>Use:</strong> Provides a tech-inspired keychain while reusing old USB casings.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Ethernet Cable Planter</h4>
+                <button class="read-more-btn" onclick="toggleDescription('ethernet-planter')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/ethernet cable.png" alt="Ethernet Cable Planter" class="content-image">
+                <div id="ethernet-planter" class="content-description">
+                    <p><strong>Main Components:</strong> Ethernet cables, wire mesh, plant pot</p>
+                    <p><strong>Description:</strong> This is a creative upcycling project where old Ethernet cables are wrapped around a plant pot, secured with wire, and transformed into a decorative planter. The blue connector is left visible for added aesthetic appeal. This project showcases how old cables can be repurposed into functional home décor instead of being discarded.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Motherboard or CD/DVD Coasters</h4>
+                <button class="read-more-btn" onclick="toggleDescription('motherboard-coasters')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/CD Coasters.png" alt="Motherboard or CD/DVD Coasters" class="content-image">
+                <div id="motherboard-coasters" class="content-description">
+                    <p><strong>Description:</strong> Small square pieces of a motherboard are cut or take a CD/DVD and used as drink coasters.</p>
+                    <p><strong>Components Used:</strong> Cut sections of old motherboards, sandpaper (for edges), protective coating.</p>
+                    <p><strong>Use:</strong> Protects surfaces while repurposing old circuit boards or CDs into useful items.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Recycled Keyboard Photo Frame</h4>
+                <button class="read-more-btn" onclick="toggleDescription('keyboard-photo-frame')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/keyboard frame.png" alt="Recycled Keyboard Photo Frame" class="content-image">
+                <div id="keyboard-photo-frame" class="content-description">
+                    <p><strong>Main Components:</strong> Old keyboard keys, wooden or plastic frame</p>
+                    <p><strong>Description:</strong> This DIY project turns an old computer keyboard into a unique photo frame. The keys are removed from a discarded keyboard and glued around the edges of a basic frame, giving it a tech-inspired look. This is a fun and simple way to recycle outdated keyboards while adding a creative touch to home or office décor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-item with-image">
+            <div class="content-header">
+                <h4>Circuit Board Mini Airplane</h4>
+                <button class="read-more-btn" onclick="toggleDescription('circuit-board-airplane')">Read More</button>
+            </div>
+            <div class="content-with-image">
+                <img src="images/mini plane.png" alt="Circuit Board Mini Airplane" class="content-image">
+                <div id="circuit-board-airplane" class="content-description">
+                    <p><strong>Components Used:</strong> Small pieces of circuit boards, capacitors, resistors, soldering tools, adhesive</p>
+                    <p><strong>Description:</strong> A miniature airplane made from recycled circuit boards showcases the artistic side of electronic waste recycling. The propeller is crafted from small metallic components, while the wings and body are carefully cut from old circuit boards, making it a perfect decorative item.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="Learning.js"></script>
+</body>
+</html>

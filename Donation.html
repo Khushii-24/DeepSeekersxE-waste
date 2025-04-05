@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recycling - E-Waste Solution</title>
+    <!-- Include Slick Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- Include Font Awesome for Arrows -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Donation.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Device Donation Program</h1>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="marketplace.html" class="nav-link">Marketplace</a></li>
+            <li><a href="ai.html" class="nav-link">AI Recycling</a></li>
+            <li><a href="Donation.html" class="nav-link">Donation</a></li>
+            <li><a href="learning.html" class="nav-link">Learning</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Give Your Old Devices a New Life</h2>
+        <p>When considering e-waste donations, it's helpful to categorize the types of electronics.</p>
+    </section>
+
+    <section class="recycle-section">
+        <div class="dropdown-container">
+            <label for="category">Select Category:</label>
+            <select id="category" onchange="updateSubcategory()">
+                <option value="">-- Select a Category --</option>
+                <option value="computing">Computing and IT Equipment</option>
+                <option value="mobile">Mobile Devices</option>
+                <option value="entertainment">Home Entertainment</option>
+                <option value="appliances">Small Household Appliances</option>
+                <option value="other">Other Electronics</option>
+            </select>
+        </div>
+
+        <div class="dropdown-container" id="subcategory-container">
+            <label for="subcategory">Select Item:</label>
+            <select id="subcategory">
+                <option value="">-- Select an Item --</option>
+            </select>
+        </div>
+    </section>
+    <!-- New Section for Next Page Button -->
+    <section class="next-page-section">
+        <a href="schemes.html" class="next-page-btn">Top Donation Firms</a>
+    </section>
+
+    <!-- Slideshow Section with Slick Slider -->
+    <section class="slideshow-section">
+        <div class="gutentor-module-slider-row" 
+             data-dots="false" 
+             data-dotstablet="false" 
+             data-dotsmobile="false" 
+             data-nextarrow="fas fa-angle-right" 
+             data-prevarrow="fas fa-angle-left" 
+             data-arrows="true" 
+             data-arrowstablet="false" 
+             data-arrowsmobile="false" 
+             data-fade="false" 
+             data-draggable="true" 
+             data-infinite="true" 
+             data-autoplay="true" 
+             data-pauseonfocus="false" 
+             data-pauseonhover="false" 
+             data-speed="3000" 
+             data-autoplayspeed="5000" 
+             data-arrowspositiondesktop="gutentor-slick-a-default-desktop">
+            <div class="slick-list draggable">
+                <div class="slick-track">
+                    <div class="wp-block-gutentor-m5-col gutentor-slider-item">
+                        <div class="gutentor-col-wrap has-image-bg has-custom-bg">
+                            <img src="images/plastic-containers-garbage-different-types-260nw-1408807418.webp" alt="Old laptops being donated">
+                            <div class="gutentor-slider-caption">
+                                <div class="grid-container">
+                                    <div class="slide-text">Donate your old laptops to support education programs.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp-block-gutentor-m5-col gutentor-slider-item">
+                        <div class="gutentor-col-wrap has-image-bg has-custom-bg">
+                            <img src="images/shutterstock_2468664359-scaled.webp" alt="Smartphones being refurbished">
+                            <div class="gutentor-slider-caption">
+                                <div class="grid-container">
+                                    <div class="slide-text">Refurbished smartphones can help bridge the digital divide.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp-block-gutentor-m5-col gutentor-slider-item">
+                        <div class="gutentor-col-wrap has-image-bg has-custom-bg">
+                            <img src="images/9b7a2436ea53e903f5497c06b5d950e4.jpg" alt="Volunteers sorting e-waste">
+                            <div class="gutentor-slider-caption">
+                                <div class="grid-container">
+                                    <div class="slide-text">Join our volunteers in sorting e-waste for donation.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp-block-gutentor-m5-col gutentor-slider-item">
+                        <div class="gutentor-col-wrap has-image-bg has-custom-bg">
+                            <img src="images/ewaste-UAE.webp" alt="Volunteers sorting e-waste">
+                            <div class="gutentor-slider-caption">
+                                <div class="grid-container">
+                                    <div class="slide-text">Join our volunteers in sorting e-waste for donation.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- New Section for Next Page Button -->
+    
+
+    <!-- Include jQuery and Slick Slider JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="Donation.js"></script>
+</body>
+</html>

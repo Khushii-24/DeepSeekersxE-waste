@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    background-color: white;
+    color: #303234; /* Dark gray for better readability */
+}
+
+header {
+    background:  rgba(66, 133, 244, 0.9); /* Gradient of Google Blue to Google Green */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgba(244, 160, 0, 0.9); /* Google Yellow on hover */
+}
+
+/* Button Section */
+.button-section {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(244, 160, 0, 0.1); /* Light Google Yellow background */
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: rgba(219, 68, 55, 0.9); /* Google Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: rgba(244, 160, 0, 0.9); /* Google Yellow on hover */
+    color: black;
+}
+
+.tab-btn.active {
+    background-color: rgba(66, 133, 244, 0.9); /* Google Blue when active */
+    color: white;
+}
+
+/* Content Sections */
+.content-section {
+    display: none;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.content-section h2 {
+    color: #303234;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-item {
+    margin-bottom: 30px;
+    border: 2px solid rgba(219, 68, 55, 0.9); /* Google Red border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+.content-item h3 {
+    color: #303234;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.content-header h4 {
+    color: #303234;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: rgba(219, 68, 55, 0.9); /* Google Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: rgba(244, 160, 0, 0.9); /* Google Yellow on hover */
+    color: black;
+}
+
+.content-description {
+    display: none;
+    padding: 15px;
+    background-color: #e8e8e8; /* Slightly darker gray for contrast */
+    border-radius: 5px;
+}
+
+.content-description p {
+    margin-bottom: 10px;
+}
+
+.content-description ul, .content-item ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.content-description ul li, .content-item ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.content-description ul li:before, .content-item ul li:before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: rgba(15, 157, 88, 0.9); /* Google Green for checkmark */
+}
+
+.content-description ol, .content-item ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.content-description a, .content-item a {
+    color: rgba(66, 133, 244, 0.9); /* Google Blue for links */
+    text-decoration: none;
+}
+
+.content-description a:hover, .content-item a:hover {
+    color: rgba(219, 68, 55, 0.9); /* Google Red on hover */
+}
+
+/* Uses of Electronic Waste Section with Images */
+.with-image .content-with-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid rgba(219, 68, 55, 0.9); /* Google Red border */
+}
+
+.with-image .content-description {
+    flex: 1;
+}

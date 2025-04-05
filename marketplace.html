@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - E-Waste Solution</title>
+    <link rel="stylesheet" href="marketplace.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>E-Waste Marketplace</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="marketplace.html">Marketplace</a></li>
+                <li><a href="ai.html">AI Recycling</a></li>
+                <li><a href="Donation.html">Donation</a></li>
+                <li><a href="learning.html">Learning</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Buy & Sell Refurbished Electronics</h2>
+        <p>Find high-quality, affordable pre-owned devices or list your old gadgets for sale.</p>
+         <!-- Sell Your Device Button -->
+        <div class="sell-container">
+        <button id="sell-device-btn">Sell Your Device</button>
+        </div>
+    </section>
+
+    <section id="market-items">
+        <div class="product-card">
+            <img src="images/laptop.png" alt="Refurbished Laptop">
+            <h3>Refurbished Laptop</h3>
+            <p>High-performance laptop with warranty.</p>
+            <span>$350</span>
+            <button class="add-to-cart" data-name="Refurbished Laptop" data-price="350">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/phone.png" alt="Used Smartphone">
+            <h3>Used Smartphone</h3>
+            <p>Tested and certified for quality.</p>
+            <span>$200</span>
+            <button class="add-to-cart" data-name="Used Smartphone" data-price="200">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="images/headphones.png" alt="Recycled Headphones">
+            <h3>Recycled Headphones</h3>
+            <p>Eco-friendly and excellent sound quality.</p>
+            <span>$50</span>
+            <button class="add-to-cart" data-name="Recycled Headphones" data-price="50">Add to Cart</button>
+        </div>
+    </section>
+   
+
+<!-- Sell Device Form (Initially Hidden) -->
+<div id="sell-form-container" class="hidden">
+    <div class="sell-form">
+        <h2>Sell Your Device</h2>
+        <form id="sell-form">
+            <label for="device-name">Device Name:</label>
+            <input type="text" id="device-name" required>
+
+            <label for="device-price">Price ($):</label>
+            <input type="number" id="device-price" required>
+
+            <label for="device-condition">Condition:</label>
+            <select id="device-condition" required>
+                <option value="New">New</option>
+                <option value="Like New">Like New</option>
+                <option value="Used">Used</option>
+                <option value="For Parts">For Parts</option>
+            </select>
+
+            <label for="device-image">Upload Image:</label>
+            <input type="file" id="device-image" accept="image/*" required>
+
+            <button type="submit">Submit Listing</button>
+            <button type="button" id="close-form">Cancel</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- View More Button -->
+<div class="view-more-container">
+    <button id="view-more-btn" class="btn">View More</button>
+</div>
+
+    <section id="cart-section">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+
+    <script src="marketplace.js"></script>
+</body>
+</html>
